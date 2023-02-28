@@ -1,0 +1,360 @@
+<html>
+    <head>
+        <title>Inspirational Quotes</title>
+        <link rel="stylesheet" href="inspirationalQuotes.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="menuBar">
+            <a href="./index.html">
+                <img src="./logo.png" style="width: 25%; margin-right: 150px; margin-left: -270px;">
+            </a>
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="q" id = "searchbar" onkeyup="openPage()">
+                <script>
+                    function openPage(){
+                        let get_id = document.getElementById("searchbar").value.toUpperCase();
+                        let ul = document.getElementById("sports-menu-ul");
+                        let li = ul.getElementsByTagName('li');
+                        
+                        for(var i=0; i<li.length; i++){
+                            let a = li[i].getElementsByTagName('a')[0];
+                            let textValue = a.textContent || a.innerHTML;
+
+                            if(textValue.toUpperCase().indexOf(get_id) > -1){
+                                li[i].style.display = 'get_id';
+                            }else{
+                                li[i].style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+                <button type="submit"><img src="./search-icon.PNG"></button>
+            </form>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Opportunities</a>
+                <div class="subMenu1">
+                <ul>
+                    <li>
+                        <a href="#">Sports</a>
+                    <div class="subMenuSports">
+                    <ul id="sports-menu-ul">
+                        <li><a href="./basketball.html">Basketball</a></li>
+                        <li><a href="./Football">Football</a></li>
+                        <li><a href="./Badminton">Badminton</a></li>
+                        <li><a href="./Cricket">Cricket</a></li>
+                        <li><a href="./Tennis">Tennis</a></li>
+                        <li><a href="./Table Tennis">Table Tennis</a></li>
+                        <li><a href="./Motor-sports">Motor Sports</a></li>
+                        <li><a href="./Boxing">Boxing</a></li>
+                        <li><a href="./Athletics">Athletics</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Culinary</a>
+                    <div class="subMenuCulinary">
+                    <ul>
+                        <li><a href="./main-course">Main Course</a></li>
+                        <li><a href="./Desserts">Desserts</a></li>
+                        <li><a href="./Drinks">Drinks</a></li>
+                        <li><a href="./starts-snacks">Snacks/Starters</a></li>
+                        <li><a href="./recipe">Best-Recipe</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Arts</a>
+                    <div class="subMenuArts">
+                    <ul>
+                        <li><a href="./painting-drawing">Photography/Film</a></li>
+                        <li><a href="./painting-drawing">Painting/Drawing</a></li>
+                        <li><a href="./Music">Music</a></li>
+                        <li><a href="./Dance">Dance</a></li>
+                        <li><a href="./Drama">Drama</a></li>
+                        <li><a href="./Design">Designing</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="#">Academics</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li>
+                <a href="./internships.html">Internships</a>
+            </li>
+            <li>
+                <a href="#">Inspiration</a>
+                <div class="subMenu2">
+                    <ul>
+                        <li>
+                            <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="./inspirationalArticles.html">Inspirational Articles</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="feedback.html">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="background-image-inspirational-quotes">
+            <!--<img src="background.png">-->
+            <h1>Inspirational Quotes</h1>
+        </div>
+        <br>
+        <br>
+        <section data-aos="fade-up">
+        <h3>General</h3>
+        <div class="general-quotes">
+            <div class="quote1">
+                <img src="quote1-general.jpg">
+                <br>
+                <p disabled>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+            </div>
+            <div class="quote2">
+                <img src="quote2-general.webp">
+                <br>
+                <p disabled>"Success is not final; failure is not fatal; it is the courage to continue that counts." - Winston Churchill</p>
+            </div>
+            <div class="quote3">
+                <img src="quote3-general.png">
+                <br>
+                <p disabled>"Nothing is impossible. The word itself says 'I'm possible'." - Audrey Hepburn</p>
+            </div>
+            </div>
+            <div class="general-quotes">
+            <div class="quote4">
+                <img src="quote4-general.jpg">
+                <br>
+                <p disabled>"If you're going through hell, keep going." - Winston Churchill</p>
+            </div>
+            <div class="quote5">
+                <img src="quote5-general.jpg">
+                <br>
+                <p disabled>"Work hard in silence, let your success be your noise." - Anonymous</p>
+            </div>
+            <div class="quote6">
+                <img src="quote6-general.webp">
+                <br>
+                <p disabled>"If your dreams don't scare you, they are too small." - Richard Branson</p>
+            </div>
+        </div>
+        </section>
+        <br>
+        <section data-aos="slide-right">
+        <h3>Sports-Related</h3>
+        <div class="sports-quotes">
+            <div class="quote1">
+                <img src="quote1-sports.jpg">
+                <br>
+                <p>"If you train hard, you'll not only be hard, you'll be hard to beat." - Hershel Walker</p>
+            </div>
+            <div class="quote2">
+                <img src="quote2-sports.png">
+                <br>
+                <p>"To be a great champion, you must believe you are the best. If not, pretend you are." - Muhammad Ali</p>
+            </div>
+            <div class="quote3">
+                <img src="quote3-sports.jpg">
+                <br>
+                <p>"Its not whether you get knocked down, its whether you get back up." - Vince Lombardi</p>
+            </div>
+            </div>
+            <div class="sports-quotes">
+            <div class="quote4">
+                <img src="quote4-sports.jpg">
+                <br>
+                <p>"There may be people that have more talent than you, but there's no excuse for anyone to work harder than you do." - Derek Jeter</p>
+            </div>
+            <div class="quote5">
+                <img src="quote5-sports.jpg">
+                <br>
+                <p>"You miss 100% of the shots you don't take." - Wayne Gretzky</p>
+            </div>
+            <div class="quote6">
+                <img src="quote6-sports.webp">
+                <br>
+                <p>"I have failed over and over in my life. And that is why I succeed." - Michael Jordan </p>
+            </div>
+        </div>
+        </section>
+        <br>
+        <section data-aos="fade-up">
+        <h3>Culinary-Related</h3>
+        <div class="culinary-quotes">
+            <div class="quote1">
+                <img src="quote1-culinary.jpg">
+                <br>
+                <p>"No one is born a great cook, one learns by doing it." - Julia Child</p>
+            </div>
+            <div class="quote2">
+                <img src="quote2-culinary.webp">
+                <br>
+                <p>"A recipe has no soul. You, as a cook, must bring the soul to the recipe." - Thomas Keller</p>
+            </div>
+            <div class="quote3">
+                <img src="quote3-culinary.webp">
+                <br>
+                <p>"Cooking well doesn't mean cooking fancy." - Julia Child</p>
+            </div>
+            </div>
+            <div class="culinary-quotes">
+            <div class="quote4">
+                <img src="quote4-culinary.webp">
+                <br>
+                <p>"Cooking is like snow skiing; if you don't fall 10 times, then you're not skiing hard enough." - Guy Fieri</p>
+            </div>
+            <div class="quote5">
+                <img src="quote5-culinary.png">
+                <br>
+                <p>"Cooking is like love. It should be entered with abandon, or not at all." - Harriet van Horne</p>
+            </div>
+            <div class="quote6">
+                <img src="quote6-culinary.webp">
+                <br>
+                <p>"The secret of good cooking is, firstly, having a love for it." - James Beard</p>
+            </div>
+        </div>
+        </section>
+        <br>
+        <section data-aos="slide-right">
+        <h3>Arts-Related</h3>
+        <div class="arts-quotes">
+            <div class="quote1">
+                <img src="quote1-arts.jpg">
+                <br>
+                <p>"Creativity takes courage." - Henri Matisse</p>
+            </div>
+            <div class="quote2">
+                <img src="quote2-arts.jpg">
+                <br>
+                <p>"Art is not what you see, but what you make others see." - Edgar Degas</p>
+            </div>
+            <div class="quote3">
+                <img src="quote3-arts.jpg">
+                <br>
+                <p>"Every child is an artist. The problem is to remain an artist when they grow up." - Pablo Picasso</p>
+            </div>
+            </div>
+            <div class="arts-quotes">
+            <div class="quote4">
+                <img src="quote4-arts.jpg">
+                <br>
+                <p>"Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." - Scott Adams</p>
+            </div>
+            <div class="quote5">
+                <img src="quote5-arts.jpg">
+                <br>
+<p>"Every child was first an amateur." - Ralph Waldo Emerson</p>
+            </div>
+            <div class="quote6">
+                <img src="quote6-arts.webp">
+                <br>
+                <p>"There is no 'right' way to make art. The only wrong way is in not trying, not doing. Don't put barriers up that aren't there - just get to work and make something." - Lisa Golightly</p>
+            </div>
+        </div>
+        </section>
+        <section data-aos="fade-up">
+            <h3>Academics-Related</h3>
+            <div class="academics-quotes">
+                <div class="quote1">
+                    <img src="quote1-academics.jpg">
+                    <br>
+                    <p>"Learning is not attained by chance, it must be sought with ardor and attended with diligence." - Abigail Adams</p>
+                </div>
+                <div class="quote2">
+                    <img src="quote2-academics.webp">
+                    <br>
+                    <p>"If you're not willing to learn, no one can help you. If you're determined to learn, no one can stop you." - Anonymous</p>
+                </div>
+                <div class="quote3">
+                    <img src="quote3-academics.jpg">
+                    <br>
+                    <p>"Anyone who hasn't made a mistake has never tried anything new." - Albert Einstein</p>
+                </div>
+                </div>
+                <div class="culinary-quotes">
+                <div class="quote4">
+                    <img src="quote4-academics.jpg">
+                    <br>
+                    <p>"Failure is success if we learn from it." - Malcolm Forbes</p>
+                </div>
+                <div class="quote5">
+                    <img src="quote5-academics.jpg">
+                    <br>
+                    <p>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+                </div>
+                <div class="quote6">
+                    <img src="quote6-general.webp">
+                    <br>
+                    <p>"If your dreams don't scare you, they are too small." - Richard Branson</p>
+                </div>
+            </div>
+            </section>
+            <br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <div class="col-1">
+        <h3>Useful Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+    <div class = "col-2">
+        <h3>Competitions</h3>
+        <a href="index.html">Sports Competitions</a>
+        <a href="index.html">Culinary Competitions</a>
+        <a href="index.html">Arts Competitions</a>
+        <h3>Inspiration</h3>
+        <a href="index.html">Inspirational Quotes</a>
+        <a href="index.html">Inspirational Articles</a>
+    </div>
+    <div class="col-3">
+        <h3>Contact Us</h3>
+        <div class="footer-email">
+            <i class="fa-thin fa-envelope"></i>
+            <p>Email ID: <br> _______@______.com</p>
+        </div>
+        <div class="footer-phone">
+            <i class="fa-thin fa-phone"></i>
+            <p>Phone Number: <br> +01 12345 67890</p>
+        </div>
+    </div>
+</div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 300,
+            duration: 600,
+            once: true
+          });
+        </script>
+    </body>
+</html>

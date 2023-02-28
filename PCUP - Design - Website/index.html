@@ -1,0 +1,340 @@
+<html>
+    <head>
+        <title>PCUP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+        <script src="home.js"></script>
+        <script src="searchbar.js" defer></script>
+    </head>
+    <body>
+            <div class="menuBar">
+                <a href="./index.html">
+                    <img src="./logo.png" style="width: 25%; margin-right: 150px; margin-left: -270px;">
+                </a>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search" name="q" id = "searchbar" onkeyup="openPage()">
+                    <script>
+                        function openPage(){
+                            let get_id = document.getElementById("searchbar").value.toUpperCase();
+                            let ul = document.getElementById("sports-menu-ul");
+                            let li = ul.getElementsByTagName('li');
+                            
+                            for(var i=0; i<li.length; i++){
+                                let a = li[i].getElementsByTagName('a')[0];
+                                let textValue = a.textContent || a.innerHTML;
+
+                                if(textValue.toUpperCase().indexOf(get_id) > -1){
+                                    li[i].style.display = 'get_id';
+                                }else{
+                                    li[i].style.display = 'none';
+                                }
+                            }
+                        }
+                    </script>
+                    <button type="submit"><img src="./search-icon.PNG"></button>
+                </form>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Opportunities</a>
+                    <div class="subMenu1">
+                    <ul>
+                        <li>
+                            <a href="#">Sports</a>
+                        <div class="subMenuSports">
+                        <ul id="sports-menu-ul">
+                            <li><a href="./basketball.html">Basketball</a></li>
+                            <li><a href="./Football">Football</a></li>
+                            <li><a href="./Badminton">Badminton</a></li>
+                            <li><a href="./Cricket">Cricket</a></li>
+                            <li><a href="./Tennis">Tennis</a></li>
+                            <li><a href="./Table Tennis">Table Tennis</a></li>
+                            <li><a href="./Motor-sports">Motor Sports</a></li>
+                            <li><a href="./Boxing">Boxing</a></li>
+                            <li><a href="./Athletics">Athletics</a></li>
+                        </ul>
+                        </div>
+                        </li>
+                        <li>
+                        <a href="#">Culinary</a>
+                        <div class="subMenuCulinary">
+                        <ul>
+                            <li><a href="./main-course">Main Course</a></li>
+                            <li><a href="./Desserts">Desserts</a></li>
+                            <li><a href="./Drinks">Drinks</a></li>
+                            <li><a href="./starts-snacks">Snacks/Starters</a></li>
+                            <li><a href="./recipe">Best-Recipe</a></li>
+                        </ul>
+                        </div>
+                        </li>
+                        <li>
+                        <a href="#">Arts</a>
+                        <div class="subMenuArts">
+                        <ul>
+                            <li><a href="./painting-drawing">Photography/Film</a></li>
+                            <li><a href="./painting-drawing">Painting/Drawing</a></li>
+                            <li><a href="./Music">Music</a></li>
+                            <li><a href="./Dance">Dance</a></li>
+                            <li><a href="./Drama">Drama</a></li>
+                            <li><a href="./Design">Designing</a></li>
+                        </ul>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="#">Academics</a>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                    <a href="./internships.html">Internships</a>
+                </li>
+                <li>
+                    <a href="#">Inspiration</a>
+                    <div class="subMenu2">
+                        <ul>
+                            <li>
+                                <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="./inspirationalArticles.html">Inspirational Articles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="feedback.html">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+            <div class="background-image-home">
+                <img src="background.png">
+            </div>
+<div class="Featured">
+    <br>
+    <br>
+    <div class="Homebanner">
+        <ul>
+            <li>
+                <a href="#"><img src="./sports-homeBanner-icon.png" alt="Sports"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="#"><img src="./cooking-homeBanner-icon.png" alt="Culinary"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="#"><img src="./arts-homeBanner-icon.png" alt="Arts"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="#"><img src="./academics-homeBanner-icon.png" alt="Academics"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="./internships.html"><img src="./internships-homeBanner-icon.png" alt="Internships"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="./Inspiration/inspirationalQuotes.html"><img src="./inspirationalQuotes-homeBanner-icon.png" alt="inspirational Quotes"></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li>
+                <a href="./Inspiration/inspirationalArticles.html"><img src="./inspirationalArticles-homeBanner-icon.png" alt="inspirational Articles"></a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="Global"  data-aos="fade-up">
+        <h3>Global</h3>
+    </div>
+        <div class="global-competitions" data-aos="fade-up">
+            <div class="global1">
+                <img src="./SFI-2050-Global.jpg" style="height: 35.0rem; margin-top: -2.0rem">
+                <br>
+                <p disabled>Science Foundation Ireland 2050 Challenge for Researchers</p>
+            </div>
+            <div class="global2">
+                <img src="./Geneva - Global.jpg" style="height: 33.0rem;">
+                <br>
+                <p disabled>The Geneva Challenge 2023</p>
+            </div>
+            <div class="global3">
+                <img src="./AIM - Art - Global.png">
+                <br>
+                <p disabled>AIM-OFFICIAL Art Contest-I</p>
+            </div>
+        </div>
+    <br>
+    <br>
+    <div class="National" data-aos="fade-up">
+        <h3>National</h3>
+    </div>
+    <div class="national-competitions" data-aos="fade-up">
+        <div class="national1">
+            <img src="./CodeWars - National.png" style="height: 30.1rem">
+            <br>
+            <p disabled >HPE CodeWars Code Battle</p>
+        </div>
+        <div class="national2">
+            <img src="./ATL - National.jpg" style="height: 30.3rem">
+            <br>
+            <p disabled>ATL Marathon</p>
+        </div>
+        <div class="national3">
+            <img src="./NLAC - National.png" style="height: 30.3rem;">
+            <br>
+            <p disabled>National Level Art Contest</p>
+        </div>
+        <div class="national4">
+            <img src="./YCEC - National.jpg">
+            <br>
+            <p disabled>Youth Citizen Entrepreneurship Competition</p>
+        </div>
+        </div>
+    <br>
+    <br>
+    <div class="combine-regional-deadline">
+    <div class="Regional" data-aos="slide-right">
+        <h3>Regional</h3>
+    </div>
+    <div class="regional-competitions" data-aos="slide-right">
+        <div class="regional-set1">
+            <div class="regional1">
+                <img src="./oliphant - regional.jpg" style="height: 30.0rem;">
+                <br>
+                <p disabled>SFA Championship</p>
+            </div>
+            <div class="regional2">
+                <img src="./Sarmang - Marathon - Regional.png" style="height: 30.0rem;">
+                <br>
+                <p disabled>Sarmang Marathon Dehradun</p>
+            </div>
+        </div>
+        <div class="regional-set2">
+            <div class="regional1">
+                <img src="./CST - Regional.jpg" style="height: 30.0rem;">
+                <br>
+                <p disabled>CST Soccer Ground</p>
+            </div>
+            <div class="regional2">
+                <img src="./Manorite - TT - Regional.jpg" style="height: 30.0rem;">
+                <br>
+                <p disabled>Manorite Table Tennis Tournament</p>
+            </div>
+        </div>
+        <div class="regional-set3">
+            <div class="regional1">
+                <img src="./poem-writing-regional-deadline.jpg" style="height:30.0rem;">
+                <br>
+                <p disabled>Poem Writing - Science</p>
+            </div>
+            <div class="regional2">
+                <img src="./State-Shooting-Regional.webp" style= "height:30.0rem">
+                <br>
+                <p disabled>Uttarakhand Shooting Competition</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="Deadlines" data-aos="slide-left">
+        <h3>Deadlines Approaching</h3>
+    </div>
+    <div class="deadlines-competitions" data-aos="slide-left">
+        <div class="deadlines-set1">
+            <div class="deadlines1">
+                <img src="./poem-writing-regional-deadline.jpg" style="height:30.0rem;">
+                <br>
+                <p disabled>Poem Writing - Science</p>
+            </div>
+            <div class="deadlines2">
+                <img src="./SFA - Deadlines.jpg" style="height:30.0rem;">
+                <br>
+                <p disabled>SFA Championship</p>
+            </div>
+        </div>
+        <div class="deadlines-set2">
+            <div class="deadlines1">
+                <img src="./Slogan - Deadlines.png" style="height:30.0rem;">
+                <br>
+                <p disabled>Slogan Writing - Science</p>
+            </div>
+            <div class="deadlines2">
+                <img src="./OOTZ - Deadlines.jpg" style="height:30.0rem;">
+                <br>
+                <p disabled>Orator of the Zone</p>
+            </div>
+        </div>
+        <div class="deadlines-set3">
+            <div class="deadlines1">
+                <img src="./BKJ - Deadlines.webp" style="height:30.0rem;">
+                <br>
+                <p disabled>Bharat Ko Jaano</p>
+            </div>
+            <div class="deadlines2">
+                <img src="./Archery Selection - Deadlines.jpg" style="height:30.0rem;">
+                <br>
+                <p disabled>Selection Trial - Youth World Archery Championship</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+</div>
+    
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+        <div class = "col-2">
+            <h3>Opportunities Offered</h3>
+            <a href="index.html">Sports Competitions</a>
+            <a href="index.html">Culinary Competitions</a>
+            <a href="index.html">Art Competitions</a>
+            <a href="index.html">Academic Competitions</a>
+            <a href="index.html">Internships</a>
+            <h3>Inspiration</h3>
+            <a href="index.html">Inspirational Quotes</a>
+            <a href="index.html">Inspirational Articles</a>
+        </div>
+        <div class="col-3">
+            <h3>Contact Us</h3>
+            <div class="footer-email">
+                <p><img src="./email-icon.PNG"><b>Email ID:</b> <br> _______@______.com</p>
+            </div>
+            <div class="footer-phone">
+                <p><img src="./phone-icon.PNG"><b>Phone Number:</b> <br> +01 12345 67890</p>
+            </div>
+            <div class="footer-address">
+                <i class=""></i>
+                <p><b>Mailing Address:</b> <br>1-B2 SFS Talwandi, Kota, Rajasthan, India</p>
+            </div>
+        </div>
+    </div>
+
+    <!--aos data-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 600,
+        once: true
+      });
+    </script>
+    </body>
+</html>

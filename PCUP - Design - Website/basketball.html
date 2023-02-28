@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <title>Inspirational Quotes</title>
+        <link rel="stylesheet" href="basketball.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    </head>
+    <body> 
+        <div class="menuBar">
+            <a href="./index.html">
+                <img src="./logo.png" style="width: 25%; margin-right: 150px; margin-left: -270px;">
+            </a>
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="q" id = "searchbar" onkeyup="openPage()">
+                <script>
+                    function openPage(){
+                        let get_id = document.getElementById("searchbar").value.toUpperCase();
+                        let ul = document.getElementById("sports-menu-ul");
+                        let li = ul.getElementsByTagName('li');
+                        
+                        for(var i=0; i<li.length; i++){
+                            let a = li[i].getElementsByTagName('a')[0];
+                            let textValue = a.textContent || a.innerHTML;
+
+                            if(textValue.toUpperCase().indexOf(get_id) > -1){
+                                li[i].style.display = 'get_id';
+                            }else{
+                                li[i].style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+                <button type="submit"><img src="./search-icon.PNG"></button>
+            </form>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Opportunities</a>
+                <div class="subMenu1">
+                <ul>
+                    <li>
+                        <a href="#">Sports</a>
+                    <div class="subMenuSports">
+                    <ul id="sports-menu-ul">
+                        <li><a href="./basketball.html">Basketball</a></li>
+                        <li><a href="./Football">Football</a></li>
+                        <li><a href="./Badminton">Badminton</a></li>
+                        <li><a href="./Cricket">Cricket</a></li>
+                        <li><a href="./Tennis">Tennis</a></li>
+                        <li><a href="./Table Tennis">Table Tennis</a></li>
+                        <li><a href="./Motor-sports">Motor Sports</a></li>
+                        <li><a href="./Boxing">Boxing</a></li>
+                        <li><a href="./Athletics">Athletics</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Culinary</a>
+                    <div class="subMenuCulinary">
+                    <ul>
+                        <li><a href="./main-course">Main Course</a></li>
+                        <li><a href="./Desserts">Desserts</a></li>
+                        <li><a href="./Drinks">Drinks</a></li>
+                        <li><a href="./starts-snacks">Snacks/Starters</a></li>
+                        <li><a href="./recipe">Best-Recipe</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Arts</a>
+                    <div class="subMenuArts">
+                    <ul>
+                        <li><a href="./painting-drawing">Photography/Film</a></li>
+                        <li><a href="./painting-drawing">Painting/Drawing</a></li>
+                        <li><a href="./Music">Music</a></li>
+                        <li><a href="./Dance">Dance</a></li>
+                        <li><a href="./Drama">Drama</a></li>
+                        <li><a href="./Design">Designing</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="#">Academics</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li>
+                <a href="./internships.html">Internships</a>
+            </li>
+            <li>
+                <a href="#">Inspiration</a>
+                <div class="subMenu2">
+                    <ul>
+                        <li>
+                            <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="./inspirationalArticles.html">Inspirational Articles</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="feedback.html">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="background-image-basketball">
+            <h1>Basketball Competitions</h1>
+        </div>
+        <br>
+        <br>
+        <section data-aos="fade-up">
+        <h3>Next 3 months</h3>
+        <div class="three-months">
+            <div class="quote1">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            <div class="quote2">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            <div class="quote3">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            </div>
+        </section>
+        <br>
+        <section class="implement-backgroundc-color" data-aos="fade-up">
+        <h3>Next 6 months</h3>
+        <div class="six-months">
+            <div class="quote1">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            <div class="quote2">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            <div class="quote3">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            </div>
+        </section>
+        <br>
+        <section data-aos="fade-up">
+        <h3>Next 12 months</h3>
+        <div class="twelve-months">
+            <div class="quote1">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>Win Mumby Tournament</p>
+                </a>
+            </div>
+            <div class="quote2">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>Kodai Open Basketball Tournament</p>
+                </a>
+            </div>
+            <div class="quote3">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            </div>
+        </section>
+        <br>
+        <section data-aos="fade-up">
+        <h3>Forever</h3>
+        <div class="forever">
+            <div class="quote1">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>Jr. NBA India</p>
+                </a>
+            </div>
+            <div class="quote2">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            <div class="quote3">
+                <a href="./winMumby.html">
+                    <img src="./winMumbyImages/win-mumby-back-cover-1024x683.jpg">
+                    <br>
+                    <p>"Out of the mountain of despair, a stone of hope." - Martin Luther King</p>
+                </a>
+            </div>
+            </div>
+        </section>
+        <br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <div class="col-1">
+        <h3>Useful Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+    <div class = "col-2">
+        <h3>Competitions</h3>
+        <a href="index.html">Sports Competitions</a>
+        <a href="index.html">Culinary Competitions</a>
+        <a href="index.html">Arts Competitions</a>
+        <h3>Inspiration</h3>
+        <a href="index.html">Inspirational Quotes</a>
+        <a href="index.html">Inspirational Articles</a>
+    </div>
+    <div class="col-3">
+        <h3>Contact Us</h3>
+        <div class="footer-email">
+            <i class="fa-thin fa-envelope"></i>
+            <p>Email ID: <br> _______@______.com</p>
+        </div>
+        <div class="footer-phone">
+            <i class="fa-thin fa-phone"></i>
+            <p>Phone Number: <br> +01 12345 67890</p>
+        </div>
+    </div>
+</div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 300,
+            duration: 600,
+            once: true
+          });
+        </script>
+    </body>
+</html>

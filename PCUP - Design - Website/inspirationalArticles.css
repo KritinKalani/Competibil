@@ -1,0 +1,438 @@
+html{
+    font-size: 62.5%;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Josefin Slab';
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+.menuBar{
+    position: fixed;
+    width: 100%;
+    background: #1d3557;
+    text-align: center;
+    z-index: 12;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17;
+}
+.menuBar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff9d2;
+    /*margin-left: -100;*/
+}
+.menuBar ul li{
+    min-width: 7.5rem;
+    margin: 1.5rem 1.0rem;
+    padding: 1.5rem;
+}
+.menuBar ul li a{
+    text-decoration: none;
+    color: #fff9d2;
+}
+.menuBar ul li:hover{
+    background: #faa564;
+    border-radius: 0.3rem;
+}
+.search-bar{
+    width: 100%;
+    max-width: 30.0rem;
+    color: #ffffff;
+    background-color: #fff9d2;
+    display: flex;
+    align-items: center;
+    border-radius:0.2rem;
+    padding: 1.0rem 2.0rem;
+    height: 2.5rem;
+    margin-left: -28.0rem;
+    margin-right: 5.0rem;
+}
+.search-bar button img{
+    width: 5.0rem;
+}
+.search-bar button{
+    background: #faa564;
+    border: none;
+    cursor: pointer;
+    height: 4.55rem;
+    width: 7.0rem;
+    margin-left: 12.7rem;
+}
+.search-bar input{
+    color: #1d3557;
+    background-color: #fff9d2;
+    border: 0;
+    outline: none;
+    height: 2.0rem;
+}
+.hide{
+    display: none;
+}
+
+.search-bar input:focus{
+    background-color: #fff9d2;
+}
+.subMenu1 ul li a{
+    color: #fff9d2;
+}
+.subMenu1{
+    display: none;
+}
+.menuBar ul li:hover .subMenu1{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu1 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu1 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu1 ul li:last-child{
+    border: none;
+}
+
+.subMenu2{
+    display: none;
+}
+
+.menuBar ul li:hover .subMenu2{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu2 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu2 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu2 ul li:last-child{
+    border: none;
+}
+.subMenuSports{
+    display: none;
+}
+.subMenu1 li:hover .subMenuSports{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuCulinary{
+    display: none;
+}
+.subMenu1 li:hover .subMenuCulinary{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuArts{
+    display: none;
+}
+.subMenu1 li:hover .subMenuArts{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.general-articles{
+    display: flex;
+    justify-content: center;
+    padding: 20;
+    background-color: #1d3557;
+}
+.general-articles img{
+    width: 330;
+    padding: 20px;
+}
+.general-articles img:hover{
+    opacity: 0.75;
+}
+.general-articles p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.general-articles p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.sports-articles{
+    display: flex;
+    justify-content: center;
+    padding: 20;
+}
+.sports-articles img{
+    width: 330;
+    padding: 20px;
+}
+.sports-articles img:hover{
+    opacity: 0.75;
+}
+.sports-articles p{
+    resize: none;
+    width: 300px;
+    background-color: #faa564;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.sports-articles p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.culinary-articles{
+    display: flex;
+    justify-content: center;
+    padding: 20;
+    background-color: #1d3557;
+}
+.culinary-articles img{
+    width: 330;
+    padding: 20px;
+}
+.culinary-articles img:hover{
+    opacity: 0.75;
+}
+.culinary-articles p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.culinary-articles p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.arts-articles{
+    display: flex;
+    justify-content: center;
+    padding: 20;
+}
+.arts-articles img{
+    width: 330;
+    padding: 20px;
+}
+.arts-articles img:hover{
+    opacity: 0.75;
+}
+.arts-articles p{
+    resize: none;
+    width: 300px;
+    background-color: #faa564;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.arts-articles p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.academics-articles{
+    display: flex;
+    justify-content: center;
+    padding: 20;
+    background-color: #1d3557;
+}
+.academics-articles img{
+    width: 330;
+    padding: 20px;
+}
+.academics-articles img:hover{
+    opacity: 0.75;
+}
+.academics-articles p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.academics-articles p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.background-image-inspirational-articles{
+    /*margin-top: -36px;*/
+    margin-top: -10px;
+    width:auto;
+    /*height: 707px;*/
+    height: 300px;
+    border: 2px solid #faa564;
+    background-color: #faa564;
+    word-wrap: normal;
+    margin-bottom: 30px;
+    animation: zoomin 0.4s linear 1;
+    animation-delay: 0.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+.background-image-inspirational-articles h1{
+    color: #fff9d2;
+    position: absolute;
+    font-size: 60;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30%;
+    margin-top: 108px;
+}
+.footer{
+    margin-top: 50px;
+    width: 86.1%;
+    padding: 100px;
+    background: #1d3557;
+    display: flex;
+ }
+ .footer div{
+    text-align: center;
+ }
+ .col-1{
+    margin-left: 13%;
+ }
+ .col-2{
+    margin-left: 20%;
+ }
+ .col-3{
+    margin-left: 20%;
+ }
+ .footer div h3{
+    color: #faa564;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+ }
+ .footer a:hover{
+    opacity: 0.7;
+ }
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #fff9d2;
+    font-size: 15px;
+ }
+ .col-1 h3{
+    font-size: 20px;
+ }
+ .col-2 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #fff9d2;
+    font-size: 15px;
+ }
+ .col-2 h3{
+    font-size: 20px;
+ }
+ .col-3{
+    text-align: center;
+ }
+ .col-3 h3{
+    font-size: 20px;
+ }
+ .col-3 p{
+    text-align: center;
+    color: #fff9d2;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+ }
+ .footer-email{
+    text-align: center;
+    display: flex;
+ }
+ .footer-phone{
+    text-align: center;
+    display: flex;
+ }
+p{
+    padding: 10px;
+    margin-left: 23px;
+    font-size: 15px;
+}
+h3{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+@media(max-width: 998px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width: 548) {
+    html{
+        font-size: 35%;
+    }
+}
+@media(max-width: 328) {
+    html{
+        font-size: 25%;
+    }
+}

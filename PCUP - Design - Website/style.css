@@ -1,0 +1,546 @@
+html{
+    font-size: 62.5%;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Josefin Slab';
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+.menuBar{
+    position: fixed;
+    width: 100%;
+    background: #1d3557;
+    text-align: center;
+    z-index: 12;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17;
+}
+.menuBar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff9d2;
+    /*margin-left: -100;*/
+}
+.menuBar ul li{
+    min-width: 7.5rem;
+    margin: 1.5rem 1.0rem;
+    padding: 1.5rem;
+}
+.menuBar ul li a{
+    text-decoration: none;
+    color: #fff9d2;
+}
+.menuBar ul li:hover{
+    background: #faa564;
+    border-radius: 0.3rem;
+}
+.search-bar{
+    width: 100%;
+    max-width: 30.0rem;
+    color: #ffffff;
+    background-color: #fff9d2;
+    display: flex;
+    align-items: center;
+    border-radius:0.2rem;
+    padding: 1.0rem 2.0rem;
+    height: 2.5rem;
+    margin-left: -28.0rem;
+    margin-right: 5.0rem;
+}
+.search-bar button img{
+    width: 5.0rem;
+}
+.search-bar button{
+    background: #faa564;
+    border: none;
+    cursor: pointer;
+    height: 4.55rem;
+    width: 7.0rem;
+    margin-left: 12.7rem;
+}
+.search-bar input{
+    color: #1d3557;
+    background-color: #fff9d2;
+    border: 0;
+    outline: none;
+    height: 2.0rem;
+}
+.hide{
+    display: none;
+}
+
+.search-bar input:focus{
+    background-color: #fff9d2;
+}
+.subMenu1 ul li a{
+    color: #fff9d2;
+}
+.subMenu1{
+    display: none;
+}
+.menuBar ul li:hover .subMenu1{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu1 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu1 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu1 ul li:last-child{
+    border: none;
+}
+
+.subMenu2{
+    display: none;
+}
+
+.menuBar ul li:hover .subMenu2{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu2 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu2 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu2 ul li:last-child{
+    border: none;
+}
+.subMenuSports{
+    display: none;
+}
+.subMenu1 li:hover .subMenuSports{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuCulinary{
+    display: none;
+}
+.subMenu1 li:hover .subMenuCulinary{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuArts{
+    display: none;
+}
+.subMenu1 li:hover .subMenuArts{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.background-image-home img{
+    margin-top: 7.2rem;
+    height: auto;
+    width: 100%;
+    animation: zoomin 0.4s linear 1;
+    animation-delay: 0.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+p{
+    font-size: 1.5rem;
+    padding: 1.0rem;
+}
+.global-competitions{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /*animation: moveright 0.3s linear 1;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+}
+.global-competitions img{
+    width: 33.0rem;
+    height: auto;
+    padding: 2.0rem;
+    padding-left: 3.0rem;
+}
+.global-competitions img:hover{
+    opacity: 0.75;
+}
+.global-competitions p{
+    width: 30.0rem;
+    height: auto;
+    background-color: #fff9d2;
+    margin-left: 2.3rem;
+    padding-left: 3.0rem;
+}
+.global-competitions p:hover{
+    background-color: #faa564;
+}
+.Global{
+    width: 25%;
+    padding: 2.0rem;
+    background-color: #1d3557;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #fff9d2;
+    margin-top: 1.0rem;
+    margin: auto;
+    height: auto;
+    /*animation: moveright 0.3s linear 1;*/
+}
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-60.0rem);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0rem);
+        visibility: visible;
+    }
+}
+.national-competitions{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /*animation: moveleft 0.3s linear 1;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+}
+.national-competitions img{
+    width: 30.0rem;
+    height: auto;
+    padding: 2.0rem;
+}
+.national-competitions img:hover{
+    opacity: 0.75;
+}
+.national-competitions p{
+    width: 27.0rem;
+    height: auto;
+    background-color: #faa564;
+    margin-left: 2.3rem;
+}
+.national-competitions p:hover{
+    background-color: #fff9d2;
+}
+.National{
+    width: 25%;
+    box-sizing: content-box;
+    padding: 2.0rem;
+    margin-top: 5.0rem;
+    background-color: #faa564;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #1d3557;
+    margin: auto;
+    height: auto;
+    /*animation: moveleft 0.3s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(60.0rem);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0rem);
+        visibility: visible;
+    }
+}
+.regional-set1{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+}
+.regional-set2{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+}
+.regional-set3{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+}
+.regional-competitions{
+    /*animation: moveright 0.3s linear 1;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+    background-color: #1d3557;
+    box-sizing: content-box;
+    padding: 1.0rem;
+    width: 49%;
+}
+.regional-competitions img{
+    width: 30.0rem;
+    padding: 2.0rem;
+    height: auto;
+}
+.regional-competitions img:hover{
+    opacity: 0.75;
+}
+.regional-competitions p{
+    width: 27.0rem;
+    height: auto;
+    background-color: #faa564;
+    margin-left: 2.5rem;
+}
+.regional-competitions p:hover{
+    background-color: #fff9d2;
+}
+.Regional{
+    width: 25%;
+    box-sizing: content-box;
+    padding: 2.0rem;
+    margin-top: 5.0rem;
+    background-color: #faa564;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #1d3557;
+    margin-left: 15rem;
+    /*animation: moveright 0.3s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+}
+.deadlines-set1{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+.deadlines-set2{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+.deadlines-set3{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+}
+.deadlines-competitions{
+    /*animation: moveleft 0.3s linear 1;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+    background-color: #fff9d2;
+    width: 49%;
+    margin-left: 72.7rem;
+    padding: 0.6rem 0rem;
+    padding-right: 3.9rem;
+}
+.deadlines-competitions img{
+    width: 30.0rem;
+    padding: 2.0rem;
+    height: auto;
+}
+.deadlines-competitions img:hover{
+    opacity: 0.75;
+}
+.deadlines-competitions p{
+    width: 27.0rem;
+    background-color: #1d3557;
+    margin-left: 2.5rem;
+    height: auto;
+    color: #fff9d2;
+}
+.deadlines-competitions p:hover{
+    background-color: #faa564;
+    color: #1d3557;
+}
+.Deadlines{
+    width: 25%;
+    box-sizing: content-box;
+    padding: 2.0rem;
+    background-color: #1d3557;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #fff9d2;
+    margin-top: -122.7rem;
+    margin-left: 89.0rem;
+    /*animation: moveleft 0.3s linear 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;*/
+}
+.footer{
+    margin-top: 5.0rem;
+    width: 86.1%;
+    padding: 10.0rem;
+    background: #1d3557;
+    display: flex;
+    line-height: 1.8rem;
+    font-size: 1.55rem;
+}
+.footer-email img{
+    width: 10%;
+    margin-bottom: -1.5rem;
+    margin-left: -10%;
+}
+.footer-phone img{
+    width: 10%;
+    margin-bottom: -1.5rem;
+    margin-left: -10%;
+}
+.footer div{
+    text-align: center;
+}
+ .col-1{
+    margin-left: 10%;
+    width: 20.0rem;
+ }
+ .col-2{
+    margin-left: 20%;
+    width: 35.0rem;
+ }
+ .col-3{
+    margin-left: 20%;
+ }
+ .footer div h3{
+    color: #faa564;
+    font-weight: 300;
+    margin-bottom: 2.0rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2.0rem;
+ }
+ .footer a:hover{
+    opacity: 0.7;
+ }
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.0rem;
+    color: #fff9d2;
+ }
+ .col-2 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.0rem;
+    color: #fff9d2;
+ }
+ .col-3{
+    text-align: center;
+ }
+ .col-3 p{
+    text-align: center;
+    color: #fff9d2;
+    margin-bottom: 1.0rem;
+    text-decoration: none;
+    display: block;
+ }
+.homeBanner{
+    justify-content: center;
+    align-items: center;
+    background: #faa564;
+    text-align: center;
+    margin-top: -2.0rem;
+}
+.homeBanner ul{
+    display: inline-flex;
+    padding: 1.0rem;
+    height: 6.0rem;
+    list-style-type: none;
+}
+.homeBanner ul li{
+    padding: 0rem 1.7rem;
+    align-items: center;
+}
+.vertical-line{
+    margin-top: -1.0rem;
+    width: 0.3rem;
+    height: 8.0rem;
+    background: #1d3557;
+    display: block;
+}
+.homeBanner ul li:hover{
+    filter: invert(99%) sepia(79%) saturate(826%) hue-rotate(305deg) brightness(107%) contrast(109%);
+}
+.homeBanner ul li a{
+    color: #1d3557;
+}
+.homeBanner ul li a img{
+    width: 6.5rem;
+    height: 6.0rem;
+    filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
+}
+@media(max-width: 998px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width: 548) {
+    html{
+        font-size: 35%;
+    }
+}
+@media(max-width: 328) {
+    html{
+        font-size: 25%;
+    }
+}

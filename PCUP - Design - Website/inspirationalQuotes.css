@@ -1,0 +1,397 @@
+html{
+    font-size: 62.5%;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Josefin Slab';
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+p{
+    padding: 10px;
+    margin-left: 23px;
+    font-size: 15px;
+}
+h3{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.menuBar{
+    position: fixed;
+    width: 100%;
+    background: #1d3557;
+    text-align: center;
+    z-index: 12;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17;
+}
+.menuBar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff9d2;
+    /*margin-left: -100;*/
+}
+.menuBar ul li{
+    min-width: 7.5rem;
+    margin: 1.5rem 1.0rem;
+    padding: 1.5rem;
+}
+.menuBar ul li a{
+    text-decoration: none;
+    color: #fff9d2;
+}
+.menuBar ul li:hover{
+    background: #faa564;
+    border-radius: 0.3rem;
+}
+.search-bar{
+    width: 100%;
+    max-width: 30.0rem;
+    color: #ffffff;
+    background-color: #fff9d2;
+    display: flex;
+    align-items: center;
+    border-radius:0.2rem;
+    padding: 1.0rem 2.0rem;
+    height: 2.5rem;
+    margin-left: -28.0rem;
+    margin-right: 5.0rem;
+}
+.search-bar button img{
+    width: 5.0rem;
+}
+.search-bar button{
+    background: #faa564;
+    border: none;
+    cursor: pointer;
+    height: 4.55rem;
+    width: 7.0rem;
+    margin-left: 12.7rem;
+}
+.search-bar input{
+    color: #1d3557;
+    background-color: #fff9d2;
+    border: 0;
+    outline: none;
+    height: 2.0rem;
+}
+.hide{
+    display: none;
+}
+
+.search-bar input:focus{
+    background-color: #fff9d2;
+}
+.subMenu1 ul li a{
+    color: #fff9d2;
+}
+.subMenu1{
+    display: none;
+}
+.menuBar ul li:hover .subMenu1{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu1 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu1 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu1 ul li:last-child{
+    border: none;
+}
+
+.subMenu2{
+    display: none;
+}
+
+.menuBar ul li:hover .subMenu2{
+    display: block;
+    position: absolute;
+    background: #faa564;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.menuBar ul li:hover .subMenu2 ul{
+    display: block;
+    align-items: center;
+    align-self: center;
+}
+
+.menuBar ul li:hover .subMenu2 ul li{
+    width: 16.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem dotted #fff9d2;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menuBar ul li:hover .subMenu2 ul li:last-child{
+    border: none;
+}
+.subMenuSports{
+    display: none;
+}
+.subMenu1 li:hover .subMenuSports{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuCulinary{
+    display: none;
+}
+.subMenu1 li:hover .subMenuCulinary{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.subMenuArts{
+    display: none;
+}
+.subMenu1 li:hover .subMenuArts{
+    display: block;
+    position: absolute;
+    background: #ffb57c;
+    margin-top: -2.3rem;
+    margin-left: -21.0rem;
+}
+.sports-quotes{
+    display: flex;
+    justify-content: center;
+}
+.sports-quotes img{
+    width: 330;
+    height: 335;
+    padding: 20px;
+}
+.sports-quotes img:hover{
+    opacity: 0.75;
+}
+.sports-quotes p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.sports-quotes p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.general-quotes{
+    display: flex;
+    justify-content: center;
+}
+.general-quotes img{
+    width: 330;
+    height: 335;
+    padding: 20px;
+}
+.general-quotes img:hover{
+    opacity: 0.75;
+}
+.general-quotes p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.general-quotes p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.culinary-quotes{
+    display: flex;
+    justify-content: center;
+}
+.culinary-quotes img{
+    width: 330;
+    height: 335;
+    padding: 20px;
+}
+.culinary-quotes img:hover{
+    opacity: 0.75;
+}
+.culinary-quotes p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.culinary-quotes p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.arts-quotes{
+    display: flex;
+    justify-content: center;
+}
+.arts-quotes img{
+    width: 330;
+    height: 335;
+    padding: 20px;
+}
+.arts-quotes img:hover{
+    opacity: 0.75;
+}
+.arts-quotes p{
+    resize: none;
+    width: 300px;
+    background-color: #faa564;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.arts-quotes p:hover{
+    resize: none;
+    width: 300px;
+    background-color: #fff9d2;
+}
+.academics-quotes{
+    display: flex;
+    justify-content: center;
+}
+.academics-quotes img{
+    width: 330;
+    height: 335;
+    padding: 20px;
+}
+.academics-quotes img:hover{
+    opacity: 0.75;
+}
+.academics-quotes p{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #faa564;
+}
+.academics-quotes p:hover{
+    resize: none;
+    width: 300px;
+    height: fit-content;
+    background-color: #fff9d2;
+}
+.background-image-inspirational-quotes{
+    /*margin-top: -36px;*/
+    margin-top: -10px;
+    width:auto;
+    /*height: 707px;*/
+    height: 300px;
+    border: 2px solid #faa564;
+    background-color: #faa564;
+    word-wrap: normal;
+    margin-bottom: 30px;
+    animation: zoomin 0.3s linear 1;
+    animation-delay: 0.2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.background-image-inspirational-quotes h1{
+    color: #fff9d2;
+    position: absolute;
+    font-size: 60;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 32%;
+    margin-top: 108px;
+}
+.footer{
+    margin-top: 5.0rem;
+    width: 86.1%;
+    padding: 10.0rem;
+    background: #1d3557;
+    display: flex;
+ }
+ .footer div{
+    text-align: center;
+ }
+ .col-1{
+    margin-left: 13%;
+ }
+ .col-2{
+    margin-left: 20%;
+ }
+ .col-3{
+    margin-left: 20%;
+ }
+ .footer div h3{
+    color: #faa564;
+    font-weight: 300;
+    margin-bottom: 2.0rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2.0rem;
+ }
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.0rem;
+    color: #fff9d2;
+ }
+ .col-2 a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.0rem;
+    color: #fff9d2;
+ }
+ .col-3{
+    text-align: center;
+ }
+ .col-3 p{
+    text-align: center;
+    color: #fff9d2;
+    margin-bottom: 1.0rem;
+    text-decoration: none;
+    display: block;
+ }
+ .footer-email{
+    text-align: center;
+    display: flex;
+ }
+ .footer-phone{
+    text-align: center;
+    display: flex;
+ }
+@keyframes zoomin{
+    0%{
+        transform: scale(0);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}

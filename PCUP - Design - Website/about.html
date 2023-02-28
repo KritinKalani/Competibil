@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>About the Author</title>
+        <link rel = "stylesheet" href = "about.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="menuBar">
+            <a href="./index.html">
+                <img src="./logo.png" style="width: 25%; margin-right: 150px; margin-left: -270px;">
+            </a>
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="q" id = "searchbar" onkeyup="openPage()">
+                <script>
+                    function openPage(){
+                        let get_id = document.getElementById("searchbar").value.toUpperCase();
+                        let ul = document.getElementById("sports-menu-ul");
+                        let li = ul.getElementsByTagName('li');
+                        
+                        for(var i=0; i<li.length; i++){
+                            let a = li[i].getElementsByTagName('a')[0];
+                            let textValue = a.textContent || a.innerHTML;
+
+                            if(textValue.toUpperCase().indexOf(get_id) > -1){
+                                li[i].style.display = 'get_id';
+                            }else{
+                                li[i].style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+                <button type="submit"><img src="./search-icon.PNG"></button>
+            </form>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Opportunities</a>
+                <div class="subMenu1">
+                <ul>
+                    <li>
+                        <a href="#">Sports</a>
+                    <div class="subMenuSports">
+                    <ul id="sports-menu-ul">
+                        <li><a href="./basketball.html">Basketball</a></li>
+                        <li><a href="./Football">Football</a></li>
+                        <li><a href="./Badminton">Badminton</a></li>
+                        <li><a href="./Cricket">Cricket</a></li>
+                        <li><a href="./Tennis">Tennis</a></li>
+                        <li><a href="./Table Tennis">Table Tennis</a></li>
+                        <li><a href="./Motor-sports">Motor Sports</a></li>
+                        <li><a href="./Boxing">Boxing</a></li>
+                        <li><a href="./Athletics">Athletics</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Culinary</a>
+                    <div class="subMenuCulinary">
+                    <ul>
+                        <li><a href="./main-course">Main Course</a></li>
+                        <li><a href="./Desserts">Desserts</a></li>
+                        <li><a href="./Drinks">Drinks</a></li>
+                        <li><a href="./starts-snacks">Snacks/Starters</a></li>
+                        <li><a href="./recipe">Best-Recipe</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Arts</a>
+                    <div class="subMenuArts">
+                    <ul>
+                        <li><a href="./painting-drawing">Photography/Film</a></li>
+                        <li><a href="./painting-drawing">Painting/Drawing</a></li>
+                        <li><a href="./Music">Music</a></li>
+                        <li><a href="./Dance">Dance</a></li>
+                        <li><a href="./Drama">Drama</a></li>
+                        <li><a href="./Design">Designing</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="#">Academics</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li>
+                <a href="./internships.html">Internships</a>
+            </li>
+            <li>
+                <a href="#">Inspiration</a>
+                <div class="subMenu2">
+                    <div class="subMenu2">
+                        <ul>
+                            <li>
+                                <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="./inspirationalArticles.html">Inspirational Articles</a>
+                            </li>
+                        </ul>
+                    </div>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="feedback.html">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="background-image-about">
+            <!--<img src="background.png">-->
+            <h1>About Us</h1>
+        </div>
+        <div class="abt-website" data-aos="slide-down">
+        <div class="our-purpose">
+        <h2>Our Purpose</h2>
+            <p>The purpose of this website is to let all high school students gain access to various kinds of opportunities that give them experience abd exposure in those activities. It will develop their skills in activities of their interests, but it will also let them explore new activities that might be of interest to them. Along with that, this will help the students in deciding their future plans, and will help in building their resumes to get to the university of their choice. </p>
+        </div>
+        <div class="abt-audience">
+        <div class="our-audience" data-aos="slide-right">
+                <h2>Our Audience</h2>
+                <p style="width: 90%;">Our audience is any high school aspirant wanting to either explore new opportunities, or gain experience in activities of their current interest. These opportunities will help the students decide their future path, as they will be able to understand what level they are at at any activity, respective to the outer world. This will understand what training they need to do if they want to continue with that activity, or if they want to try out a new activity altogether. This process is usually encouraged in high school, which is why they are the target audience initially.</p>
+        </div>
+        <div class="going-global" data-aos="slide-left">
+                <h2>Going Global</h2>
+                <p style="width: 90%;">In the future, we plan to grow in three ways - the size of the target audience, the region the target audience is from, and the activities that are present. Currently, this website addresses high schoolers, but in the future, I plan to increase the size of the audience by expanding it to middle school and college level as well. This will increase the benefits to more students, and will let them explore opportunities early on. I plan to grow the target audience outside of this region as well, so that more students across India, and then slowly across the world, may benefit of off this as well. Lastly, I will also increase the number of activities provided on the website, to let the audience participate in more opportunities.</p>
+        </div>
+    </div>
+    </div>
+    <div class="abt-me">
+        <div class="about" data-aos="slide-right">
+            <!--<h2>About the Writer</h2>-->
+            <img src="images/About-Me.jpg">
+        </div>
+        <div class="abt-founder" data-aos="slide-left">
+            <!--<svg height="180" width="400">
+                <rect width="600" height="400"style="fill:lightblue" />   x="30" y="40" fill="black"-->
+                <h2>About Me</h2>
+                <p style="width: 90%;">Hello guys, my name is Kritin Kalani. I am a hugh school student studying in India, and what inspired me to create this website was when I was facing challenges in participating in competitions of my interest myself. I am interested in the sciences, and even though I was provided with opportunities from my school, I needed more opportunities to gain exposure. Thats when I realized that a product like this can be a gamechanger in shaping the interests of students of my age. So, I decided to make a website, using my coding knowledge, for other students like me.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+        <div class = "col-2">
+            <h3>Competitions</h3>
+            <a href="index.html">Sports Competitions</a>
+            <a href="index.html">Culinary Competitions</a>
+            <a href="index.html">Arts Competitions</a>
+            <h3>Inspiration</h3>
+            <a href="index.html">Inspirational Quotes</a>
+            <a href="index.html">Inspirational Articles</a>
+        </div>
+        <div class="col-3">
+            <h3>Contact Us</h3>
+            <div class="footer-email">
+                <i class="fa-thin fa-envelope"></i>
+                <p>Email ID: <br> _______@______.com</p>
+            </div>
+            <div class="footer-phone">
+                <i class="fa-thin fa-phone"></i>
+                <p>Phone Number: <br> +01 12345 67890</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            offset: 300,
+            duration: 600,
+            once: true
+        });
+        </script>
+    </body>
+</html>
