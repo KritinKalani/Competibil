@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <title>Inspirational Articles</title>
+        <link rel="stylesheet" href="inspirationalArticles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="menuBar">
+            <a href="./index.html">
+                <img src="./logo.png" style="width: 25%; margin-right: 150px; margin-left: -270px;">
+            </a>
+            <form class="search-bar">
+                <input type="text" placeholder="Search" name="q" id = "searchbar" onkeyup="openPage()">
+                <script>
+                    function openPage(){
+                        let get_id = document.getElementById("searchbar").value.toUpperCase();
+                        let ul = document.getElementById("sports-menu-ul");
+                        let li = ul.getElementsByTagName('li');
+                        
+                        for(var i=0; i<li.length; i++){
+                            let a = li[i].getElementsByTagName('a')[0];
+                            let textValue = a.textContent || a.innerHTML;
+
+                            if(textValue.toUpperCase().indexOf(get_id) > -1){
+                                li[i].style.display = 'get_id';
+                            }else{
+                                li[i].style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+                <button type="submit"><img src="./search-icon.PNG"></button>
+            </form>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Opportunities</a>
+                <div class="subMenu1">
+                <ul>
+                    <li>
+                        <a href="#">Sports</a>
+                    <div class="subMenuSports">
+                    <ul id="sports-menu-ul">
+                        <li><a href="./basketball.html">Basketball</a></li>
+                        <li><a href="./Football">Football</a></li>
+                        <li><a href="./Badminton">Badminton</a></li>
+                        <li><a href="./Cricket">Cricket</a></li>
+                        <li><a href="./Tennis">Tennis</a></li>
+                        <li><a href="./Table Tennis">Table Tennis</a></li>
+                        <li><a href="./Motor-sports">Motor Sports</a></li>
+                        <li><a href="./Boxing">Boxing</a></li>
+                        <li><a href="./Athletics">Athletics</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Culinary</a>
+                    <div class="subMenuCulinary">
+                    <ul>
+                        <li><a href="./main-course">Main Course</a></li>
+                        <li><a href="./Desserts">Desserts</a></li>
+                        <li><a href="./Drinks">Drinks</a></li>
+                        <li><a href="./starts-snacks">Snacks/Starters</a></li>
+                        <li><a href="./recipe">Best-Recipe</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <a href="#">Arts</a>
+                    <div class="subMenuArts">
+                    <ul>
+                        <li><a href="./painting-drawing">Photography/Film</a></li>
+                        <li><a href="./painting-drawing">Painting/Drawing</a></li>
+                        <li><a href="./Music">Music</a></li>
+                        <li><a href="./Dance">Dance</a></li>
+                        <li><a href="./Drama">Drama</a></li>
+                        <li><a href="./Design">Designing</a></li>
+                    </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <a href="#">Academics</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li>
+                <a href="internships.html">Internships</a>
+            </li>
+            <li>
+                <a href="#">Inspiration</a>
+                <div class="subMenu2">
+                    <ul>
+                        <li>
+                            <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="./inspirationalArticles.html">Inspirational People</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="feedback.html">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="background-image-inspirational-articles">
+            <!--<img src="background.png">-->
+            <h1>Inspirational People</h1>
+        </div>
+        <section data-aos="fade-up">
+        <h3>General</h3>
+        <div class="general-articles">
+            <div class="article1">
+                <img src="./gauravsharma-inspirationalArticle.jpg">
+                <br>
+                <p>Gaurav Sharma</p>
+            </div>
+            <div class="article2">
+                <img src="./waltdisney-inspirationalArticle.jpg">
+                <br>
+                <p>Walt Disney</p>
+            </div>
+            <div class="article3">
+                <img src="./jkrowling-inspirationalArticle.png">
+                <br>
+                <p>JK Rowling</p>
+            </div>
+            </div>
+        </section>
+        <section data-aos="slide-right">
+            <h3>Sports-Related</h3>
+        <div class="sports-articles">
+            <div class="article1">
+                <img src="./glenn-inspirationalArticle.jpg">
+                <br>
+                <p>Glenn Cunningham</p>
+            </div>
+            <div class="article2">
+                <img src="./sandeepSingh-inspirationalArticle.jpg">
+                <br>
+                <p>Sandeep Singh</p>
+            </div>
+            <div class="article3">
+                <img src="./jadeja-inspirationalArticle.jpg">
+                <br>
+                <p>Ravindra Jadeja</p>
+            </div>
+            </div>
+        </section>
+        <section data-aos="fade-up">
+            <h3>Culinary-Related</h3>
+        <div class="culinary-articles">
+            <div class="article1">
+                <img src="./chefB-inspirationalArticle.jpg">
+                <br>
+                <p>Chef </p>
+            </div>
+            <div class="article2">
+                <img src="./julia-inspirationalArticle.jpg">
+                <br>
+                <p>Julia Child</p>
+            </div>
+            <div class="article3">
+                <img src="./vikaskhanna-inspirationalArticle.jpg">
+                <br>
+                <p>Vikas Khanna</p>
+            </div>
+            </div>
+        </section>
+        <section data-aos="slide-right">
+            <h3>Arts-Related</h3>
+        <div class="arts-articles">
+            <div class="article1">
+                <img src="./fridakahlo-inspirationalArticle.jpg">
+                <br>
+                <p>Frida Kahlo</p>
+            </div>
+            <div class="article2">
+                <img src="./arrahman-inspirationalArticle.jpg">
+                <br>
+                <p>AR Rahman</p>
+            </div>
+            <div class="article3">
+                <img src="./jewel-inspirationalArticle.jpg">
+                <br>
+                <p>Jewel</p>
+            </div>
+            </div>
+        </section>
+        <section data-aos="fade-uo">
+            <h3>Academics-Related</h3>
+        <div class="academics-articles">
+            <div class="article1">
+                <img src="./hawking-inspirationalArticle.jpg">
+                <br>
+                <p>Stephen Hawking</p>
+            </div>
+            <div class="article2">
+                <img src="./sriniva-inspirationalArticle.jpg">
+                <br>
+                <p>Srinivasa Ramanujan</p>
+            </div>
+            <div class="article3">
+                <img src="./tesla-inspirationalArticle.jpg">
+                <br>
+                <p>Nikola Tesla</p>
+            </div>
+            </div>
+        </section>
+        <br>
+    <br>
+    <br>
+    
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+        <div class = "col-2">
+            <h3>Opportunities Offered</h3>
+            <a href="./sports.html">Sports Competitions</a>
+            <a href="./culinary.html">Culinary Competitions</a>
+            <a href="./arts.html">Art Competitions</a>
+            <a href="./academics.html">Academic Competitions</a>
+            <a href="./internships.html">Internships</a>
+            <h3>Inspiration</h3>
+            <a href="./inspirationalQuotes.html">Inspirational Quotes</a>
+            <a href="./inspirationalArticles.html">Inspirational People</a>
+        </div>
+        <div class="col-3">
+            <h3>Contact Us</h3>
+            <div class="footer-email">
+                <p><img src="./footer-email-icon.png"><b>Email ID:</b> <br> _______@______.com</p>
+            </div>
+            <div class="footer-phone">
+                <p><img src="./footer-phone-icon.png"><b>Phone Number:</b> <br> +01 12345 67890</p>
+            </div>
+            <div class="footer-address">
+                <i class=""></i>
+                <p><b>Mailing Address:</b> <br>1-B2 SFS Talwandi, Kota, Rajasthan, India</p>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 300,
+            duration: 600,
+            once: true
+          });
+        </script>
+    </body>
+</html>
